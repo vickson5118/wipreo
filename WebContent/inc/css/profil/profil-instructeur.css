@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+#profil-infos-instructeur a{
+	color: #f07b16;
+	font-size:16px;
+	font-weight: bold;
+}
+
+form p {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#update-instructeur-infos{
+	outline: none;
+	border: none;
+	padding: 15px 20px;
+	color: white;
+	background-color: #572317;
+	margin-left: 84.1%;
+	margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	#update-instructeur-infos{
+		margin-left: 81.5%;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	#update-instructeur-infos{
+		margin-left: 78%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	#update-instructeur-infos{
+		margin-left: 70%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#update-instructeur-infos{
+		margin-left: 60%;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	#update-instructeur-infos {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	form p, .profil-picture p {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	#profil-infos-generales a, #profil-infos-securite a,
+		#profil-infos-instructeur a {
+		font-size: 14px;
+	}
+	.profil-picture {
+		text-align: center;
+	}
+	
+	form p{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 359px) {
+	#profil-infos-generales, #profil-infos-securite,
+		#profil-infos-instructeur {
+		margin-right: 10px;
+	}
+	
+	#profil-infos-generales a, #profil-infos-securite a,
+		#profil-infos-instructeur a {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 321px) {
+	#profil-infos-generales, #profil-infos-securite,
+		#profil-infos-instructeur {
+		margin-right: 10px;
+	}
+	#profil-infos-generales a, #profil-infos-securite a,
+		#profil-infos-instructeur a {
+		font-size: 11px;
+	}
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+.menu-profil{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #D1D7DC;
+}
+
+.menu-profil ul{
+	display: flex;
+}
+
+.menu-profil ul li{
+	list-style: none;
+	margin-right: 20px;
+}
+
+.menu-profil ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+}

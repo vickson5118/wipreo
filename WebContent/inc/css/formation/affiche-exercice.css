@@ -1,0 +1,148 @@
+.exercice-title-container{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.exercice-title-container h1{
+	font-size: 30px;
+}
+
+.exercice-competence-container{
+	margin-bottom: 30px;
+	margin-top: 30px;
+	background-color: black;
+	color: white;
+	padding: 20px 30px;
+}
+
+.questions-container{
+	margin-top: 20px;
+}
+
+.questions-container .question-item{
+	margin-bottom: 30px;
+}
+
+.questions-container .question-item h3{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.questions-container .question-item .reponse-container{
+	padding-left: 30px;
+}
+
+.questions-container .question-item .reponse-container .one-reponse{
+	margin-top: 10px;
+}
+
+.reponse-check,.disabled-check{
+	display: none;
+}
+
+.reponse-label {
+	padding: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 5px;
+	border: 2px solid lightgrey;
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+.reponse-label .label-content {
+	margin-left: 32px;
+}
+
+.reponse-label .dot {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	background: #d9d9d9;
+	border-radius: 50%;
+	position: absolute;
+	top: 12px;
+}
+
+.reponse-label .dot:before {
+	position: absolute;
+	content: "";
+	top: 4px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	background: #f15a24;
+	border-radius: 50%;
+	opacity: 0;
+	transform: scale(1.5);
+	transition: all 0.3s ease;
+}
+
+.reponse-check:checked ~ .reponse-label,.disabled-check:checked ~ .reponse-label{
+	border-color: #f15a24;
+	background: #f15a24;
+	color: white;
+}
+
+.reponse-check:checked ~ .reponse-label .dot,.disabled-check:checked ~ .reponse-label .dot {
+	background: #fff;
+}
+
+.reponse-check:checked ~ .reponse-label .dot:before,.disabled-check:checked ~ .reponse-label .dot:before{
+	opacity: 1;
+  	transform: scale(1);
+}
+
+.confirm-finish-exercice-container{
+	background-color: black;
+	color: white;
+	padding: 20px 40px;
+	text-align: center;
+}
+
+.btn-terminate-container{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.btn-terminate-container button{
+	outline: navy;
+	border: none;
+	padding: 15px;
+	background-color: rgba(241, 90, 36);
+	color: white;
+}
+
+.affiche-info{
+	margin-bottom: 50px;
+}
+
+.affiche-info div{
+	padding: 15px;
+	font-size: 18px;
+	margin-top: 30px;
+	background-color: #fff;
+	box-shadow: 2px 2px 20px #423535;
+	/*color: #f15a24;*/
+}
+
+.btn-return-formation-container a{
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	padding: 20px 30px;
+	
+}
+
+.btn-return-formation-container a:hover {
+	color: #f15a24;
+}
+
+
+
+

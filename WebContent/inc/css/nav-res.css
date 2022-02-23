@@ -1,0 +1,257 @@
+/*body {
+	overflow: hidden;
+}
+
+/*A supprimer
+.domaines,.top-prev,.top-next,.nouveautes-prev,.nouveautes-next{
+	display: none !important;
+}
+/************************************/
+.checkbtn {
+	display: block;
+	font-size: 45px;
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	cursor: pointer;
+}
+
+.logo-container {
+	position: relative;
+	left: 20%;
+	top: 20px;
+}
+
+.fermer{
+	display: none;
+	font-size: 40px;
+	position: absolute;
+	top: -10px;
+	left: -7px;
+}
+
+.open .ouvrir{
+	display: none;
+}
+
+.open .fermer{
+	display: block;
+}
+
+
+.nav {
+	background-color: #541f13;
+	position: fixed;
+	z-index: 999;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 90px;
+	overflow-y: scroll;
+	transform: translateX(-100%);
+	transition: all 0.5s;
+}
+
+.open-nav{
+	transform: translateX(0%);
+}
+
+.nav-item a,.nav-item:hover{
+	color: white;
+}
+
+.smenu a{
+	text-decoration: none;
+}
+
+header {
+	position: relative;
+	height: 90px;
+}
+
+.other-infos-header {
+	display: none;
+}
+
+.res-user-connect-container {
+	display: none;
+	position: absolute;
+	z-index: 99;
+	background-color: red;
+	top: 90px;
+	right: 20px;
+}
+
+.res-user-connect-container a{
+	text-decoration: none;
+	display: block;
+	font-size: 14px;
+	padding: 15px;
+	color: white;
+	background-color: #541f13;
+	border-bottom: 1px solid black;
+}
+
+.menu-profil-picture{
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	background-color: grey;
+	position: relative;
+	right: 5px;
+	margin-top: 5px;
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.menu-profil-picture img{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+}
+
+.open-user-connect {
+	display: block;
+}
+
+.nav {
+	display: block;
+	text-align: center;
+}
+
+.nav-domaines{
+	cursor: pointer;
+}
+
+.smenu-active>.smenu {
+	display: block;
+}
+
+.nav-item a {
+	font-size: 20px;
+}
+
+.smenu {
+	background-color: transparent;
+	color: white;
+	position: relative;
+	right: 0%;
+	width: auto;
+	column-count: 1;
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-fill: auto;
+	-webkit-column-fill: auto;
+	-moz-column-fill: auto;
+	column-gap: 60px;
+	display: none;
+	transition: display 0.5s;
+}
+
+.smenu li {
+	list-style: none;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.nav-basket {
+	display: none;
+}
+
+.res-nav-basket {
+	position: absolute;
+	right: 50px;
+	top: 25px;
+}
+
+.res-nav-basket a, .res-login-btn a {
+	text-decoration: none;
+	position: relative;
+	color: black;
+	width: 45px;
+	height: 40px;
+	font-size: 35px;
+}
+
+.res-nav-basket a i,.res-login-btn a i{
+	display: block;
+	position: absolute;
+	top: -5px;
+	left: 7px;	
+}
+
+.res-login-btn {
+	position: absolute;
+	right: 120px;
+	top: 25px;
+}
+
+.gbadge {
+	font-size: 12px;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: white;
+	text-align: center;
+	vertical-align: center;
+	background-color: red;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 3px;
+}
+
+@media only screen and (max-width: 560px) {
+	
+	.nav{
+		width: 100%;
+		top: 80px;
+	}
+	
+	header{
+		height: 80px;
+	}
+	
+	.checkbtn {
+		font-size: 30px;
+		left: 10px;
+		top: 25px;
+	}
+	
+	.logo-container{
+		left: 45px;
+		top: 25px;
+	}
+	
+	.logo-container img{
+		width: 125px;
+		height: 40px;
+	}
+	
+	.res-nav-basket a, .res-login-btn a {
+		font-size: 28px;
+	}
+	
+	.res-nav-basket {
+		right: 10px;
+		top: 25px;
+	}
+	
+	.res-login-btn {
+		position: absolute;
+		right: 60px;
+		top: 18px;
+	}
+	
+		.res-user-connect-container {
+			top: 80px;
+		}
+	
+}
+

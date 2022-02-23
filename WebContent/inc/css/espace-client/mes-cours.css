@@ -1,0 +1,36 @@
+.cours-container{
+	margin-top: 100px;
+}
+
+#mes-cours{
+	color: #f07b16;
+}
+
+/*progress-bar*/
+.ldBar{
+	width: 290px !important;
+	height: 35px !important;
+	margin-left: -35px;
+}
+
+.ldBar-label{
+	display: inline-block;
+	font-size: 15px;
+	position: absolute;
+	top: 0;
+	margin-left: -10px;
+	margin-top: 5px;
+}
+
+@media only screen and (max-width: 315px){
+	.ldBar{
+		width: 230px !important;
+		height: 35px !important;
+		margin-left: -15px;
+	}
+
+	.ldBar-label{
+		margin-left: 0px !important;
+		font-size: 13px !important;
+	}
+}

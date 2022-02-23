@@ -1,0 +1,291 @@
+
+body{
+	background-color: #F5F5F5;
+}
+
+.logo-compte{
+	margin-top: 30px;
+}
+
+.logo-compte a img{
+	width: 160px;
+	height: 50px;
+}
+
+.welcome{
+	margin-top: 30px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+/*Le paragraphe en bas de Bienvenue sur Gehant*/
+.welcome ~ p{
+	margin-bottom: 40px;
+	margin-top: -10px;
+	font-size: 18px;
+}
+
+/*Les cards de la partie Objectifs*/
+.objectif-card{
+	background-color: transparent;
+	border: 1px solid #E0E0E0;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	margin-right: 40px;
+	cursor: pointer;
+	position: relative;
+	padding: 15px 20px 0 20px;
+}
+
+.objectif-card:hover{
+	background-color: #f07b16;
+	color: white;
+}
+
+.objectif-card p{
+	font-size: 15px;
+	text-align: center;
+}
+
+/*Les differents h1 des sections*/
+.objectif-container h1,.domaine-container h1,.generate-password-container h1{
+	font-size: 32px;
+}
+
+/*La bulle affichant le chiffre des sections*/
+.objectif-container h1 span,.domaine-container h1 span,.generate-password-container h1 span{
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	font-size: 17px;
+	color: white;
+	background-color: #F07B16;
+	border-radius:50%;
+	text-align: center;
+	position: relative;
+	margin-right: 10px;
+	padding-top: 5px;
+	top: -10px;
+}
+
+/*div contenant les cards des differents objectifs*/
+.objectifs{
+	border-left: 1px solid #E0E0E0;
+	padding: 20px 0px 20px 20px;
+	position: relative;
+	left: 15px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+/*le container des differents domaines*/
+.domaine-container{
+	padding-bottom: 50px;
+}
+
+/*la div contenant les btn des differents domaines*/
+.domaines{
+	border-left: 1px solid #E0E0E0;
+	padding: 10px 0px 10px 40px;
+	position: relative;
+	min-height: 100px;
+	left: 15px;
+	width: 800px;
+}
+
+/*les paragraphes dans le domaines*/
+.domaines p{
+	font-size: 16px;
+}
+
+/*les btn affichants les differents domaines*/
+.domaine-type{
+	outline: navy;
+	background-color: #fff;
+	color: #572317;
+	border: 1px solid #572317;
+	padding: 10px;
+	font-size: 15px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+/*au survol des btn des differents domaines*/
+.domaine-type:hover {
+	background-color: #572317;
+	color:white;
+}
+
+.domaine-actif{
+	background-color: #572317;
+	color:white;
+}
+
+/*le btn permettant de definir les domaines validés*/
+.btn-domaine-type-valide{
+	background-color: #F07B16;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 120px;
+	padding: 10px 25px;
+	color: #fff;
+	border-radius: 5px;
+	margin-left: 55px;
+	margin-top: -50px;
+}
+
+.btn-domaine-type-valide:hover {
+	color: #fff;
+}
+
+.objectif-actif{
+	background-color: #f07b16;
+	color: white;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+	.container{
+		margin: 0 !important;
+		padding: 0 30px;
+	}
+	
+	.objectif-card{
+		display: inline-block;
+		margin-right: 20px;
+		cursor: pointer;
+		position: relative;
+		padding: 15px 15px 0 15px;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+	.container{
+		margin: 0 !important;
+		padding: 0 30px;
+	}
+	
+	.objectif-card{
+		display: inline-block;
+		margin-right: 5px;
+		cursor: pointer;
+		position: relative;
+		padding: 15px 5px 0px 5px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.container{
+		max-width: 100% !important;
+		margin: 0 !important;
+		padding: 0 30px;
+	}
+	
+	.objectif-container{
+		width: 80%;
+	}
+	
+	.objectif-card{
+		display: inline-block;
+		margin-right: 5px;
+		cursor: pointer;
+		position: relative;
+		padding: 15px 5px 0px 5px;
+		margin-bottom: 25px;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.domaines p{
+		width: 90%;
+	}
+	
+	.domaines{
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.container{
+		max-width: 100% !important;
+		margin: 0 !important;
+		padding: 0 30px;
+	}
+	
+	.objectif-container{
+		width: 100%;
+	}
+	
+	.objectif-card{
+		display: inline-block;
+		margin-right: 5px;
+		cursor: pointer;
+		position: relative;
+		padding: 15px 5px 0px 5px;
+		margin-bottom: 25px;
+	}
+	
+	.objectif-container>h1,.domaine-container>h1{
+		font-size: 22px;
+	}
+	
+	.objectif-container h1 span,.domaine-container h1 span{
+		top: 0px;
+	}
+	
+}
+
+@media only screen and (max-width: 499px){
+	
+	.logo-compte{
+		text-align: center;
+	}
+	.logo-compte a img{
+		width: 160px;
+		height: 75px;
+	}
+	
+	.welcome{
+		font-size: 22px;
+	}
+	
+	.welcome ~ p{
+		font-size: 15px;
+	}
+	
+	.objectif-container>h1,.domaine-container>h1{
+		font-size: 18px;
+	}
+	
+	.domaines p{
+		font-size: 14px;
+	}
+	
+}
+
+@media only screen and (max-width: 399px){
+	
+	.logo-compte{
+		text-align: center;
+	}
+	
+	.welcome{
+		font-size: 20px;
+	}
+	
+	.welcome ~ p{
+		font-size: 14px;
+	}
+	
+	.objectif-container>h1,.domaine-container>h1{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	
+	.domaines p{
+		font-size: 12px;
+	}
+	
+}

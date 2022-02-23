@@ -1,0 +1,77 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Work+Sans&display=swap')
+	;
+
+/*supprimer le box shadow qui apparait lorsque le input a le focus*/
+textarea:focus, textarea.form-control:focus, select.form-select:focus,
+	input.form-control:focus, input[type=text]:focus, input[type=password]:focus,
+	input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus,
+	[type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus,
+	[contenteditable].form-control:focus {
+	box-shadow: none;
+}
+
+/*Alertify custom*/
+.ajs-message.ajs-error.ajs-visible{
+	background-color: rgba(255,0,0,1);
+	text-shadow: none;
+	border:none;
+}
+
+.ajs-message.ajs-success.ajs-visible{
+	background-color: rgba(17,100,36,1);
+	text-shadow: none;
+	border:none;
+}
+
+.container-fluid {
+	padding: 0;
+	margin: 0;
+}
+
+/*.favoris-coeur {
+	font-size: 22px;
+	color: white;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	cursor: pointer;
+}*/
+
+.all-favoris-add{
+	outline: none;
+	border: none;
+	position: absolute;
+	font-size: 20px;
+	background-color: transparent;
+	color: white;
+	margin-top: 10px;
+	margin-left: 85%;
+	z-index: 10;
+}
+
+.all-favoris-remove{
+	position: absolute;
+	outline: none;
+	border: none;
+	font-size: 20px;
+	background-color: transparent;
+	color: #f07b16;
+	margin-top: 10px;
+	margin-left: 85%;
+	z-index: 10;
+}
+
+.error,.text-error{
+	color: rgb(255,0,0) !important;
+}
+
+.text-success{
+	color: #2e8944 !important;
+}
+
+@media only screen and (max-width: 991px){
+	.error{
+		font-size: 14px !important;
+	}
+}

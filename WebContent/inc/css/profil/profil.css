@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+#profil-infos-generales a {
+	color: #f07b16;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.col-md-12 {
+	position: relative;
+	margin-top: 30px;
+}
+
+.profil-picture {
+	margin-bottom: 30px;
+}
+
+.profil-picture input {
+	display: none;
+}
+
+.profil-picture .profllLabel {
+	background-color: grey;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	cursor: pointer;
+	text-align: center;
+	font-size: 100px;
+	color: #ffffff;
+	display: table-cell;
+	vertical-align: middle;
+	background-position: center;
+	z-index: 5;
+}
+
+.profil-picture .profllLabel:hover {
+	color: transparent;
+	background-color: rgba(0, 0, 0, .6);
+	background-image: url("/inc/images/camera.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.profil-picture form label img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 1px solid #f2f2f2;
+}
+
+form .form-floating label {
+	padding-left: 25px;
+}
+
+form p, .profil-picture p {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#update-user-infos {
+	position: relative;
+	left: 84%;
+	outline: none;
+	border: none;
+	padding: 15px 25px;
+	background-color: #572317;
+	color: white;
+	margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	#update-user-infos {
+		left: 82%;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	#update-user-infos {
+		left: 78.5%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	#update-user-infos {
+		left: 70.5%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#update-user-infos {
+		left: 61%;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	#update-user-infos {
+		left: 59%;
+	}
+	.col-md-12 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 579px) {
+	#update-user-infos {
+		position: relative;
+		left: 0%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	form p, .profil-picture p {
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	#profil-infos-generales a, #profil-infos-securite a,
+		#profil-infos-instructeur a {
+		font-size: 14px;
+	}
+	.profil-picture {
+		text-align: center;
+	}
+	
+	form p{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 359px) {
+	#profil-infos-generales, #profil-infos-securite,
+		#profil-infos-instructeur {
+		margin-right: 10px;
+	}
+	#profil-infos-generales a, #profil-infos-securite a,
+		#profil-infos-instructeur a {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 321px) {
+	#profil-infos-generales, #profil-infos-securite,
+		#profil-infos-instructeur {
+		margin-right: 10px;
+	}
+	#profil-infos-generales a, #profil-infos-securite a,
+		#profil-infos-instructeur a {
+		font-size: 11px;
+	}
+}

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body{
+	background-color: #262A35;
+}
+
+.logo-container{
+	background-color: #fff;
+	padding: 15px;
+}
+
+.container{
+	position: relative;
+}
+
+.redefinir-password-container{
+	background-color: #fff;
+	width: 45%;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 46vh;
+	transform: translateY(-50%);
+	border-radius: 8px;
+	padding: 40px 30px;
+	position: relative;
+}
+
+.redefinir-password-container p{
+	font-size: 23px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.redefinir-password-container button{
+	outline: none;
+	border: none;
+	color: white;
+	background-color: #262A35;
+	padding: 15px;
+	margin-top: 30px;
+	margin-left: 195px;
+	position: absolute;
+}
+
+.redefinir-password-container a{
+	text-decoration: none;
+	background-color: #f07b16;
+	color: white;
+	padding: 15px;
+	position: absolute;
+	right: 30px;
+	margin-top: 30px;
+}
+
+.pass-security-container{
+	margin-left: 6px;
+}
+
+.pass-security,.pass-security-ok{
+	width: 100px;
+	height: 10px;
+	display: inline-block;
+}
+
+.pass-security{
+	background-color: red;
+}
+
+.pass-security-ok{
+	background-color: green;
+}

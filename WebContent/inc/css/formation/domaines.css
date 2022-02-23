@@ -1,0 +1,1004 @@
+@charset "UTF-8";
+
+.domaine-title {
+	margin-top: 40px;
+	font-size: 35px;
+}
+
+/*La baniere au debut de la page*/
+.domaine-infos {
+	position: relative;
+	margin-top: 50px;
+}
+
+.domaine-image {
+	height: 250px;
+	width: 400px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.domaine-description {
+	width: 65%;
+	/*text-align: justify;*/
+}
+
+/*Carrousel des plus populaires*/
+.cours-populaire {
+	margin-top: 50px;
+	position: relative;
+}
+
+.cours-populaire>p {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.cours-populaire .formation-item .card {
+	/*margin-left: 15px;
+	margin-right: 15px;*/
+	margin: 15px;
+}
+
+/*Carrousel des 3 derniers posts*/
+.derniers-posts {
+	position: relative;
+	margin-top: 40px;
+}
+
+.derniers-posts>p {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.derniers-posts .col-md-12 {
+	border: 1px solid #D1D7DC;
+	height: 350px;
+	padding: 0;
+	position: relative;
+}
+
+.derniers-posts .col-md-12 img {
+	width: 480px;
+	height: 270px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	border: 1px solid #D1D7DC;
+}
+
+.derniers-posts-infos .prix {
+	font-weight: bold;
+	font-size: 25px;
+	color: #f15a24;
+	position: relative;
+	top: 55px;
+}
+
+.derniers-posts .col-md-12 a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	position: absolute;
+	/*background-color: red;*/
+	height: 350px;
+	right: 0;
+	left: -10px;
+	padding-left: 560px;
+	padding-top: 30px;
+	padding-right: 10px;
+	margin: 0;
+	z-index: 9;
+	margin: 0;
+}
+
+.derniers-posts .col-md-12 .derniers-posts-infos {
+	position: absolute;
+	left: 550px;
+	margin-top: 90px;
+}
+
+.derniers-posts .col-md-12 a:hover {
+	background-color: rgba(226, 228, 225, 0.2);
+}
+
+.slider-derniers-posts h1 {
+	font-size: 26px;
+	padding-bottom: 15px;
+}
+
+.slider-derniers-posts .rating-content{
+	color: #B4690E;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.slider-cours-populaire .mark, .slider-cours-populaire .view,.other-formations .formation-item .view {
+	font-size: 14px;
+}
+
+/*les icones prev et next*/
+.derniers-posts-prev, .derniers-posts-next, .cours-populaires-prev,
+	.cours-populaires-next, .domaines-populaires-prev,
+	.domaines-populaires-next, .formateurs-prev, .formateurs-next {
+	background-image: url("/inc/images/icones/next.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.cours-populaires-prev, .cours-populaires-next {
+	top: 180px;
+}
+
+.cours-populaires-prev {
+	left: -17px;
+	transform: rotate(180deg);
+}
+
+.cours-populaires-next, .formateurs-next {
+	right: -17px;
+}
+
+.domaines-populaires-prev, .domaines-populaires-next {
+	top: 65px;
+}
+
+.domaines-populaires-prev {
+	left: 0px;
+	transform: rotate(180deg);
+}
+
+.domaines-populaires-next {
+	right: 0px;
+}
+
+.formateurs-prev, .formateurs-next {
+	top: 100px;
+}
+
+.formateurs-prev {
+	left: 0px;
+	transform: rotate(180deg);
+}
+
+.derniers-posts-prev, .derniers-posts-next {
+	top: 200px;
+}
+
+.derniers-posts-prev {
+	left: -25px;
+	transform: rotate(180deg);
+}
+
+.derniers-posts-next, .formateurs-next {
+	right: -25px;
+}
+
+/*domaines populaires*/
+.domaines-populaires {
+	margin-top: 30px;
+	position: relative;
+}
+
+.domaines-populaires>p {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.domaine-card {
+	border: 1px solid #D1D7DC;
+	text-align: center;
+	height: 50px;
+}
+
+.domaine-card h1 a {
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	bottom: 0;
+	height: 50px;
+	font-size: 17px;
+	color: black;
+	padding-top: 15px;
+}
+
+.domaine-card h1 a:hover {
+	background-color: #541f13;
+	color: white;
+}
+
+.slider-domaines-populaires .slick-slide {
+	margin: 0 30px;
+}
+
+.domaine-card h1 {
+	font-size: 18px;
+	color: black;
+}
+
+/*les formations*/
+.formateurs-populaires {
+	margin-top: 30px;
+	position: relative;
+}
+
+.formateurs-populaires>p {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.one-formateur {
+	border: 1px solid #D1D7DC;
+	height: 160px;
+	width: 280px !important;
+	padding: 20px;
+	position: relative;
+	margin-left: 30px;
+}
+
+.one-formateur a {
+	/*background-color: red;*/
+	position: absolute;
+	display: block;
+	width: 280px;
+	height: 160px;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+
+.one-formateur a:hover {
+	background-color: rgba(200, 200, 200, 0.2);
+}
+
+.one-formateur .image-formateur {
+	height: 70px;
+	width: 70px;
+}
+
+.one-formateur .image-formateur img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.one-formateur .nom {
+	position: absolute;
+	top: 20px;
+	left: 110px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.one-formateur .fonction {
+	position: absolute;
+	top: 50px;
+	left: 110px;
+	width: 170px;
+	font-size: 14px;
+}
+
+.one-formateur .rating {
+	position: absolute;
+	top: -43px;
+	left: 115px;
+	font-size: 15px;
+	display: inline-block;
+}
+
+.one-formateur .rating-number {
+	position: absolute;
+	font-size: 14px;
+	font-weight: bold;
+	top: 95px;
+	left: 110px;
+	color: #f15a24;
+}
+
+/*.one-formateur .number-participants {
+	position: absolute;
+	top: 110px;
+	left: 110px;
+	width: 200px;
+	font-size: 14px;
+}*/
+
+.one-formateur .number-cours {
+	position: absolute;
+	top: 117px;
+	left: 110px;
+	font-size: 14px;
+}
+
+/*Tous les cours*/
+.other-formations-container {
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.other-formations-container>p {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.other-formations-container .formation-item .card {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.formation-item {
+	position: relative;
+}
+
+/*Liste des differentes formations*/
+.formation-item .card {
+	border: none;
+	margin-bottom: 50px;
+	box-shadow: -1px 0px 10px -1px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: -1px 0px 10px -1px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: -1px 0px 10px -1px rgba(0, 0, 0, 0.7);
+}
+
+.formation-item a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/*background-color: red;*/
+	top: 0;
+	left: 0;
+	z-index: 9;
+	border-radius: 8px;
+}
+
+.formation-item a .cours-title {
+	position: relative;
+	top: 170px;
+	font-size: 14px;
+	display: block;
+	padding: 0 20px;
+}
+
+.card img {
+	height: 150px;
+}
+
+.card-body h1 {
+	font-size: 14px;
+	height: 45px;
+	max-height: 50px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.formation-item .card:hover {
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+	border: 1px solid #d1d7dc;
+}
+
+.formation-prix, .formation-promo {
+	color: #f15a24;
+	font-size: 18px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.formation-promo {
+	color: red;
+	margin-left: 20px;
+	display: none;
+}
+
+.fmark{
+	font-size: 14px;
+}
+
+.frating-number{
+	display: inline-block;
+	font-size: 15px;
+	color: #f15a24;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.rating {
+	display: inline-block;
+	font-size: 23px;
+	color: #f15a24;
+	position: absolute;
+	top: 10px;
+}
+
+.formation-extra-container {
+	margin-top: -10px;
+}
+
+/*pagination*/
+.pagination {
+	position: relative;
+	bottom: 0;
+	left: 20px;
+}
+
+.pagination button:first-child {
+	background-color: #f15a24;
+	color: white;
+}
+
+.pagination button {
+	border: none;
+	outline: none;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	font-size: 18px;
+	margin-right: 10px;
+	background-color: #808080;
+	color: white;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	.slider-cours-populaire .rating {
+		font-size: 16px;
+		top: 8px;
+	}
+	
+	.other-formations .rating {
+		font-size: 16px;
+		top: 8px;
+	}
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1199px) {
+	.cours-populaire .formation-item .card {
+		margin-left: 35px;
+		margin-right: 35px;
+	}
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.container {
+		max-width: 100%;
+		padding: 0 30px 0 40px;
+	}
+	.domaine-description {
+		font-size: 15px;
+		width: 60%;
+	}
+	.cours-populaires-prev {
+		left: 15px;
+	}
+	.cours-populaires-next {
+		right: 15px;
+	}
+	.slider-derniers-posts h1 {
+		font-size: 22px;
+	}
+	.derniers-posts-infos p:nth-child(1), .derniers-posts-infos p:nth-child(2)
+		{
+		font-size: 14px;
+	}
+	
+	.derniers-posts-prev {
+		left: 5px;
+	}
+	.derniers-posts-next {
+		right: 0px;
+	}
+	
+	.other-formations .formation-item{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	
+	.other-formations .rating {
+		font-size: 16px;
+		top: 8px;
+	}
+	
+	.other-formations .formation-item .view{
+		display: block;
+		font-size: 13px;
+	}
+	
+	.other-formations .formation-item .fmark{
+		font-size: 13px;
+	}
+	
+	.other-formations .formation-item .auteur span{
+		font-size: 13px;
+		display: block;
+		padding-left: -15px;
+		padding-right: 5px;
+	}
+	
+	.other-formations .formation-item a .cours-title {
+		padding-left: 10px;
+		padding-right: 5px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.cours-populaire{
+		margin-top: 10px;
+	}
+
+	.cours-populaires-prev, .cours-populaires-next {
+		display: none !important;
+	}
+	
+		.other-formations .formation-item{
+			width: 330px !important;
+			margin: 0 auto;
+		}
+}
+
+
+@media only screen and (min-width: 840px) and (max-width: 991px) {
+	.derniers-posts-prev, .derniers-posts-next {
+		display: none !important;
+	}
+	
+	.derniers-posts .col-md-12 {
+		height: 500px;
+		width: 420px !important;
+		margin-left: 40px;
+		margin-right: 40px;
+		position: relative;
+	}
+	
+	.derniers-posts .col-md-12 img {
+		width: 350px;
+		height: 200px;
+	}
+	
+	.slider-derniers-posts h1 {
+		font-size: 18px;
+		padding-bottom: 40px;
+	}
+	
+	.derniers-posts .col-md-12 a {
+		height: 500px;
+		width: 420px;
+		padding-left: 45px;
+		padding-top: 250px;
+		padding-right: 20px;
+		margin-left: 10px;
+	}
+	
+	
+	.derniers-posts-infos .prix {
+		font-weight: bold;
+		font-size: 18px;
+		color: #f07b16;
+		position: relative;
+		top: 20px;
+	}
+	
+	.derniers-posts .col-md-12 .derniers-posts-infos {
+		left: 45px;
+		position: absolute;
+		margin-top: 300px;
+	}
+	
+	.derniers-posts-infos .auteur {
+		margin-top: -20px;
+		font-size: 14px;
+	}
+	
+	.derniers-posts-infos .formation-infos-extras{
+		margin-top: -10px;
+		font-size: 14px;
+	}
+	
+	.slider-derniers-posts .rating-content{
+		position: relative;
+		top: -20px;
+	}
+	
+	.slider-derniers-posts .rating{
+		position: relative;
+		top: -10px;
+	}
+	
+	/*.slider-derniers-posts h1 {
+		font-size: 17px;
+	}
+	.derniers-posts .col-md-12 {
+		height: 280px;
+	}
+	.derniers-posts .col-md-12 img {
+		width: 380px;
+		height: 200px;
+	}
+	.derniers-posts-infos .prix {
+		font-weight: bold;
+		font-size: 18px;
+		color: #f07b16;
+		position: relative;
+		top: 20px;
+	}
+
+	.derniers-posts .col-md-12 a {
+		padding-left: 460px;
+		padding-top: 36px;
+	}
+	.derniers-posts .col-md-12 .derniers-posts-infos {
+		left: 455px;
+		position: absolute;
+		margin-top: 90px;
+	}
+	
+	.derniers-posts-infos .auteur {
+		margin-top: -20px;
+		font-size: 14px;
+	}
+	
+	.derniers-posts-infos .formation-infos-extras{
+		margin-top: -10px;
+		font-size: 14px;
+	}
+	
+	.slider-derniers-posts .rating-content{
+		position: relative;
+		top: -20px;
+		
+	}
+	
+	.slider-derniers-posts .rating{
+		position: relative;
+		top: -10px;
+	}*/
+	
+}
+
+@media only screen and (min-width: 685px) and (max-width: 991px) {
+	.cours-populaire .col-md-12 {
+		width: 330px !important;
+	}
+}
+
+
+@media only screen and (min-width: 626px) and (max-width: 839px) {
+	.derniers-posts-prev, .derniers-posts-next {
+		display: none !important;
+	}
+
+	.derniers-posts .col-md-12 {
+		height: 500px;
+		width: 420px !important;
+		margin-left: 40px;
+		margin-right: 40px;
+		position: relative;
+	}
+	
+	.derniers-posts .col-md-12 img {
+		width: 350px;
+		height: 200px;
+	}
+	
+	.slider-derniers-posts h1 {
+		font-size: 18px;
+		padding-bottom: 40px;
+	}
+	
+	.derniers-posts .col-md-12 a {
+		height: 500px;
+		width: 420px;
+		padding-left: 45px;
+		padding-top: 250px;
+		padding-right: 20px;
+		margin-left: 10px;
+	}
+	
+	
+	.derniers-posts-infos .prix {
+		font-weight: bold;
+		font-size: 18px;
+		color: #f07b16;
+		position: relative;
+		top: 20px;
+	}
+	
+	.derniers-posts .col-md-12 .derniers-posts-infos {
+		left: 45px;
+		position: absolute;
+		margin-top: 300px;
+	}
+	
+	.derniers-posts-infos .auteur {
+		margin-top: -20px;
+		font-size: 14px;
+	}
+	
+	.derniers-posts-infos .formation-infos-extras{
+		margin-top: -10px;
+		font-size: 14px;
+	}
+	
+	.slider-derniers-posts .rating-content{
+		position: relative;
+		top: -20px;
+	}
+	
+	.slider-derniers-posts .rating{
+		position: relative;
+		top: -10px;
+	}
+	
+}
+
+@media only screen and (max-width: 600px) {
+	
+	.derniers-posts>p,.cours-populaire>p,.domaines-populaires>p,.formateurs-populaires>p {
+		font-size: 20px;
+	}
+	
+	.other-formations-container>p{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 426px) and (max-width: 625px) {
+	.derniers-posts-prev, .derniers-posts-next {
+		display: none !important;
+	}
+
+	.derniers-posts .col-md-12 {
+		height: 430px;
+		width: 300px !important;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: relative;
+	}
+	
+	.derniers-posts .col-md-12 img {
+		width: 270px;
+		height: 150px;
+		left: 10px;
+	}
+	
+	.slider-derniers-posts h1 {
+		font-size: 16px;
+		font-weight: bold;
+		padding-bottom: 40px;
+	}
+	
+	.derniers-posts .col-md-12 a {
+		height: 430px;
+		width: 300px;
+		padding-left: 10px;
+		padding-top: 205px;
+		padding-right: 10px;
+		margin-left: 10px;
+	}
+	
+	.derniers-posts .col-md-12 .derniers-posts-infos {
+		left: 10px;
+		position: absolute;
+		margin-top: 250px;
+	}
+	
+	.derniers-posts-infos .auteur {
+		margin-top: -20px;
+		font-size: 12px;
+	}
+	
+	.derniers-posts-infos .formation-infos-extras{
+		margin-top: -10px;
+		font-size: 11px;
+	}
+	
+	
+	
+	.slider-derniers-posts .rating-content{
+		position: relative;
+		top: -20px;
+		font-size: 14px;
+	}
+	
+	.slider-derniers-posts .rating{
+		position: relative;
+		top: -10px;
+		font-size: 18px;
+	}
+	
+	.derniers-posts-infos .prix {
+		font-weight: bold;
+		font-size: 18px;
+		color: #f07b16;
+		position: relative;
+		top: 5px;
+	}
+	
+}
+
+@media only screen and (min-width: 561px) and (max-width: 991px) {
+	.container {
+		max-width: 100%;
+		padding: 0 10px 0 40px;
+	}
+	.domaine-infos {
+		margin-top: 20px;
+	}
+	.domaine-title {
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+	.domaine-image {
+		position: relative;
+		margin-top: 10px;
+		width: 100%;
+		height: auto;
+	}
+	.domaine-description {
+		font-size: 13px;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.container {
+		max-width: 100%;
+		padding: 0 10px 0 20px;
+	}
+	.domaine-infos {
+		margin-top: 20px;
+	}
+	.domaine-title {
+		font-size: 24px;
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+	.domaine-image {
+		position: relative;
+		margin-top: 10px;
+		width: 100%;
+		height: auto;
+	}
+	.domaine-description {
+		font-size: 12px;
+		width: 100%;
+	}
+	.slider-cours-populaire .view {
+		display: block;
+		margin-top: 10px;
+	}
+	.slider-cours-populaire .auteur span {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	
+	.derniers-posts-prev, .derniers-posts-next {
+		display: none !important;
+	}
+	
+	.derniers-posts{
+		margin-top: 0px;
+	}
+
+	.derniers-posts .col-md-12 {
+		height: 400px;
+		width: 300px !important;
+		margin-left: 0px;
+		margin-right: 10px;
+		position: relative;
+	}
+	
+	.derniers-posts .col-md-12 img {
+		width: 300px;
+		height: 150px;
+		top: 0;
+		left: 0px;
+	}
+	
+	.slider-derniers-posts h1 {
+		font-size: 16px;
+		font-weight: bold;
+		padding-bottom: 40px;
+	}
+	
+	.derniers-posts .col-md-12 a {
+		height: 400px;
+		width: 300px;
+		padding-left: 10px;
+		padding-top: 170px;
+		padding-right: 10px;
+		margin-left: 10px;
+	}
+	
+	.derniers-posts .col-md-12 .derniers-posts-infos {
+		left: 10px;
+		position: absolute;
+		margin-top: 205px;
+	}
+	
+	.derniers-posts-infos .auteur {
+		margin-top: -20px;
+		font-size: 12px;
+	}
+	
+	.derniers-posts-infos .formation-infos-extras{
+		margin-top: -10px;
+		font-size: 11px;
+	}
+	
+	.slider-derniers-posts .rating-content{
+		position: relative;
+		top: -5px;
+		font-size: 16px;
+	}
+	
+	.slider-derniers-posts .rating{
+		position: relative;
+		top: 5px;
+		font-size: 22px;
+	}
+	
+	.derniers-posts-infos .prix {
+		font-weight: bold;
+		font-size: 20px;
+		color: #f07b16;
+		position: relative;
+		top: 20px;
+	}
+	
+}
+
+@media only screen and (min-width: 336px) and (max-width: 669px) {
+	.cours-populaire .col-md-12 {
+		width: 330px !important;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 335px) {
+	.cours-populaire .col-md-12 {
+		width: 315px !important;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.slider-cours-populaire .fmark, .slider-cours-populaire .view {
+		font-size: 12px;
+	}
+	.slider-cours-populaire .rating {
+		font-size: 17px;
+	}
+	
+	.other-formations .rating {
+		font-size: 16px;
+		top: 8px;
+	}
+	
+	.other-formations .formation-item .view{
+		display: block;
+		font-size: 13px;
+	}
+	
+	.other-formations .formation-item .fmark{
+		font-size: 13px;
+	}
+	
+	.other-formations .formation-item .auteur span{
+		font-size: 13px;
+		display: block;
+		padding-left: -15px;
+		padding-right: 5px;
+	}
+}

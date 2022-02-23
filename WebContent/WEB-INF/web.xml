@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+id="WebApp_ID" version="4.0">
+
+<!-- 
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>Entire Application</web-resource-name>
+        <url-pattern>/*</url-pattern>
+    </web-resource-collection>
+    <user-data-constraint>
+        <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+    </user-data-constraint>
+</security-constraint> 
+	 -->
+	<!--=============== Ajouter le jstl au debut de chaque fichier .jsp =================== -->
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/inc/other/taglibs.jsp</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+	
+	<session-config>
+		<session-timeout>-1</session-timeout>
+	</session-config>
+	
+	<!--
+	<listener>
+		<description>Actif lorsque la connexion s'expire apres que session-timeout expire</description>
+		<listener-class>com.gehant.servlets.Deconnexion</listener-class>
+	</listener>
+	  -->
+	<filter>
+		<filter-name>SessionFilter</filter-name>
+		<filter-class>com.wipreo.filters.SessionFilter</filter-class>
+	</filter>
+		
+	<filter-mapping>
+		<filter-name>SessionFilter</filter-name>
+		<url-pattern>/creation/formation/*</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>SessionFilter</filter-name>
+		<url-pattern>/espace-client/*</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>SessionFilter</filter-name>
+		<url-pattern>/membre/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>DomaineFilter</filter-name>
+		<filter-class>com.wipreo.filters.DomaineFilter</filter-class>
+	</filter>
+		
+	<filter-mapping>
+		<filter-name>DomaineFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- ============================URL REWRITING===================================== -->
+	<filter>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+		<init-param>
+			<param-name>confPath</param-name>
+			<param-value>/WEB-INF/urlrewrite.xml</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+		
+	<!-- SET CHARACTER -->
+	<filter>
+		<filter-name>Set Character Encoding</filter-name>
+		<filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>ignore</param-name>
+			<param-value>false</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>Set Character Encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+</web-app>

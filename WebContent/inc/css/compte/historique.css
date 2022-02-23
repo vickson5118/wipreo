@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+.historique-header {
+	background: #000;
+	width: 100%;
+	height: 120px;
+	margin-bottom: 30px;
+}
+
+.historique-header .container p {
+	color: white;
+	font-size: 34px;
+	font-weight: bold;
+	padding-top: 30px;
+}
+
+.col-md-8 {
+	margin: 0 auto;
+}
+
+.historique-icon {
+	background-color: #F5F5F5;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+.historique-icon i {
+	font-size: 100px;
+	color: #f15a24;
+}
+
+.text-historique-vide {
+	font-size: 30px;
+	text-align: center;
+	padding-top: 20px;
+	font-weight: bold;
+	color: #c9c3c3;
+}
+
+.btn-begin-purchase {
+	text-decoration: none;
+	color: white;
+	background-color: #f15a24;
+	text-align: center;
+	padding: 20px 0;
+	display: block;
+	margin: 0 auto;
+	width: 210px;
+}
+
+.btn-begin-purchase:hover {
+	color: white;
+}
+
+.check-recu a {
+	text-decoration: none;
+	display: block;
+	color: black;
+	border: 1px dotted #000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.download-recu {
+	outline: none;
+	background-color: #fff;
+	font-weight: bold;
+	border: 1px dotted #000;
+	margin-left: 20px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	.text-historique-vide {
+		font-size: 27px;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.text-historique-vide {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.container {
+		max-width: 97% !important;
+	}
+	.col-date, .fdate, .col-prix, .fprix {
+		display: none;
+	}
+	
+	.text-historique-vide {
+		font-size: 23px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.historique-icon {
+		width: 120px;
+		height: 120px;
+	}
+	.historique-icon i {
+		font-size: 60px;
+	}
+	.text-historique-vide {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 679px) {
+	.fcount, .fdesignation, .check-recu, .download-recu {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 609px) {
+	.col-designation, .fdesignation {
+		display: none;
+	}
+	.fcount, .check-recu, .download-recu {
+		font-size: 14px;
+	}
+	.historique-header .container p {
+		font-size: 23px;
+	}
+}
+
+@media only screen and (max-width: 389px) {
+	.historique-icon {
+		width: 80px;
+		height: 80px;
+	}
+	.historique-icon i {
+		font-size: 30px;
+	}
+	.text-historique-vide {
+		font-size: 18px;
+	}
+	
+	.btn-begin-purchase {
+		padding: 10px;
+		display: block;
+		font-size:14px;
+		margin: 0 auto;
+		width: 170px;
+	}
+}

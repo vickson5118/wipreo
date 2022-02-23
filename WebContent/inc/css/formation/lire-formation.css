@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+.logo-container{
+	background-color: #fff;
+	position: absolute;
+	top: 10px;
+	left: 25px;
+	padding: 10px 15px;
+}
+
+.logo-container img{
+	width: 140px;
+	height: 45px;
+}
+
+.container-fluid{
+	position: relative;
+}
+
+.container-fluid .lecteur-header{
+	width: 62%;
+	height: 90px;
+	background-color: black;
+}
+
+.lecteur-header h1{
+	color: white;
+	font-size: 20px;
+	padding-top: 30px;
+	margin-left: 230px;
+	font-weight: bold;
+}
+
+.btn-add-commentaire{
+	position: absolute;
+	outline: none;
+	border: none;
+	background-color: #fff;
+	padding: 10px;
+	right: 40%;
+	top: 20px;
+}
+
+.container-fluid .contenu-cours{
+	width: 38%;
+	background-color: #f5f5f5;
+	position: fixed;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	padding-left: 30px;
+	padding-top: 15px;
+	overflow-y:auto;
+}
+
+.container-fluid .contenu-cours p{
+	color: black;
+	font-size: 32px;
+}
+
+.lesson-source{
+	text-decoration: none;
+	color: black;
+}
+
+.lesson-source:hover,.exercice-item a:hover{
+	color: #f07b16;
+}
+
+#accordionFlushExample{
+	position: absolute;
+	right: 0;
+	width: 100%
+}
+
+.a-propos-cours-container{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 62%;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.a-propos-cours-container>p{
+	font-size: 25px;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	
+}
+
+.formation-but{
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.formation-description-container{
+	border-top: 1px solid #D1D7DC;
+	border-bottom: 1px solid #D1D7DC;
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+.formation-certificat-container{
+	padding-top: 10px;
+	border-bottom: 1px solid #D1D7DC;
+	font-size: 14px;
+}
+
+.formation-certificat-container button{
+	outline: navy;
+	border:none;
+	background-color: transparent;
+	position: relative;
+	left: 0;
+	top: 10px;
+	border-radius:0%;
+	height: auto;
+	width: auto;
+	color: black;
+	padding: 10px 50px;
+	border: 1px solid #D1D7DC;
+}
+
+.formation-certificat-container button:hover{
+	background-color: #f15a24;
+	color: white;
+}
+
+.formation-certificat-container a{
+	text-decoration: none;
+	display: block;
+	color: black;
+	position: relative;
+	left: 0;
+	top: 5px;
+	height: auto;
+	width: 300px;
+	text-align: center;
+	padding: 15px 40px;
+	border: 1px solid #D1D7DC;
+	
+}
+
+.formation-certificat-container a:hover{
+	background-color: #f15a24;
+	color: white;
+}
+
+.formation-formateur-container{
+	padding-top: 10px;
+	border-bottom: 1px solid #D1D7DC;
+}
+
+.formation-formateur-container .image-profil{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-color: grey;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.formation-formateur-container .formation-name{
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: -80px;
+	margin-left: 120px;
+}
+
+.formation-formateur-container .fonction{
+	font-size: 15px;
+	margin-left: 120px;
+}
+
+.formation-formateur-container .name-rs{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 120px;
+}
+
+.formation-formateur-container .biographie{
+	font-size: 14px;
+}
+
+.commentaire-container{
+	border-bottom: 1px solid #D1D7DC;
+	padding-top: 20px;
+	font-size: 14px;
+}
+
+.commentaire-container .one-commentaire{
+	background-color: #f4f4f4;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+.commentaire-container .one-commentaire .comment-prop-nom{
+	font-weight: bold;
+}
+
+/*.formation-chiifres{
+	border-top: 1px solid #D1D7DC;
+}*/
+
+.formation-certificat{
+	margin-top: 50px;
+	border-top: 1px solid #D1D7DC;
+}
+
+.rating{
+	font-size: 35px;
+	color: #f07b16;
+}
+
+.lesson-view{
+	text-decoration: none;
+	color: #2e8944;
+}
+
+.exercice-item{
+	padding-left: 15px;
+	margin-top: 15px;
+}
+
+.exercice-item a{
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+
+.btn-download-certificat{
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	position: absolute;
+	left: 53%;
+	top: 20px;
+	height: 50px;
+	width: 50px;
+	/*background-color: red;*/
+	padding: 0;
+	margin: 0;
+}
+
+.btn-download-certificat:hover{
+	color: #fff;
+}
+
+.btn-download-certificat i{
+	font-size: 45px;
+	position: relative;
+	top: -10px;
+	left: 3px;
+}
+
+.btn-terminate-formation{
+	outline: navy;
+	border:none;
+	background-color: #f15a24;
+	position: absolute;
+	left: 53%;
+	top: 15px;
+	border-radius: 50%;
+	height: 55px;
+	width: 55px;
+}
+
+.btn-terminate-formation i{
+	font-size: 45px;
+	position: absolute;
+	top: -7px;
+	right: 4px;
+	color: white;
+}
+

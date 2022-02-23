@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE urlrewrite
+    PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+    "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<urlrewrite>
+
+
+	<rule match-type="regex">
+		<from>^/formations/(.+)/(.+)$</from>
+		<to type="forward">/formation-dash/?titreDomaine=$1&amp;titreFormation=$2</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/apprendre/formations/(.+)/(.+)$</from>
+		<to type="forward">/learn/?titreDomaine=$1&amp;titreFormation=$2</to>
+	</rule>
+	
+	<rule match-type="regex">
+		<from>^/apprendre/exercices/(.+)/(.+)/(.+)$</from>
+		<to type="forward">/exercice-learn/?titreDomaine=$1&amp;titreFormation=$2&amp;exerciceId=$3</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/membre/historique-achats/(.+)$</from>
+		<to type="forward">/facture/?numFacture=$1</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/formations/redactions$</from>
+		<to type="forward">/mes-redactions</to>
+	</rule>
+	
+	<rule match-type="regex">
+		<from>^/formations/attente$</from>
+		<to type="forward">/mes-redactions-attente</to>
+	</rule>
+	
+	<rule match-type="regex">
+		<from>^/formations/active$</from>
+		<to type="forward">/mes-redactions-active</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/formations/(.+)$</from>
+		<to type="forward">/domaines/?titreDomaine=$1</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/creation/formation/(.+)/(.+)/prerequis$</from>
+		<to type="forward">/prerequis/?domaine=$1&amp;titreUrl=$2</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/creation/formation/(.+)/(.+)/cibles$</from>
+		<to type="forward">/cibles/?domaine=$1&amp;titreUrl=$2</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/creation/formation/(.+)/(.+)/objectifs$</from>
+		<to type="forward">/objectifs/?domaine=$1&amp;titreUrl=$2</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/creation/formation/(.+)/(.+)/points-cles$</from>
+		<to type="forward">/points/?domaine=$1&amp;titreUrl=$2</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/creation/formation/(.+)/(.+)/modules$</from>
+		<to type="forward">/modules/?domaine=$1&amp;titreUrl=$2</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/creation/formation/(.+)/(.+)/cours-exercices$</from>
+		<to type="forward">/cours/?domaine=$1&amp;titreUrl=$2</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/creation/formation/(.+)/(.+)/cours-exercices/(.+)$</from>
+		<to type="forward">/questions/?domaine=$1&amp;titreUrl=$2&amp;exerciceId=$3</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/creation/formation/(.+)/(.+)/presentation$</from>
+		<to type="forward">/presentation/?domaine=$1&amp;titreUrl=$2</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/creation/formation/(.+)/(.+)/messages$</from>
+		<to type="forward">/messages/?domaine=$1&amp;titreUrl=$2</to>
+	</rule>
+
+	<rule match-type="regex">
+		<from>^/creation/formation/(.+)/(.+)$</from>
+		<to>/creation/formation/?domaine=$1&amp;titreUrl=$2</to>
+	</rule>
+	
+	<rule match-type="regex">
+		<from>^/formateur/(.+)$</from>
+		<to>/formateur/?profil=$1</to>
+	</rule>
+
+
+
+
+</urlrewrite>

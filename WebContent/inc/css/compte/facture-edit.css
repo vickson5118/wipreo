@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+.facture-edit-header{
+	background: #000;
+	width: 100%;
+	height: 120px;
+	margin-bottom: 30px;
+}
+
+.facture-edit-header .container p{
+	color: white;
+	font-size: 34px;
+	font-weight: bold;
+	padding-top: 30px;
+}
+
+.recu-container{
+	display: flex;
+}
+
+.infos-generales{
+	width: 50%;
+}
+
+.infos-generales a{
+	text-decoration: none;
+	color: #f07b16;
+	font-weight: bold;
+}
+
+.facture-infos{
+	width: 50%;
+	padding-top: 50px;	
+}
+
+.user-sold{
+	margin-top: 60px;
+}
+
+.total-container{
+	text-align: right;
+	padding-right: 130px;
+	margin-top: 60px;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 991px){
+	.container{
+		max-width: 100% !important;
+		padding: 0 20px;
+	}
+	
+		.table{
+			font-size: 13px;
+		}
+}
+
+@media only screen and (min-width: 860px) and (max-width: 991px){
+	
+	.infos-generales h1{
+		font-size: 27px;
+	}
+	
+	.infos-generales div,.infos-generales a{
+		font-size: 15px;
+	}
+	
+	.facture-infos {
+		font-size: 15px;
+		margin-top: -30px;
+	}
+}
+
+ @media only screen and (max-width: 767px){
+ 	.col-auteur,.row-auteur{
+		display: none;
+	}
+ }
+
+@media only screen and (min-width: 530px) and (max-width: 859px){
+	
+	.infos-generales h1{
+		font-size: 27px;
+	}
+	
+	.infos-generales{
+		width: 100%;
+	}
+	
+	.infos-generales div,.infos-generales a{
+		font-size: 15px;
+	}
+	
+	.facture-infos {
+		position: absolute;
+		left: 20px;
+		margin-top: 100px;
+		width: 100%;
+		font-size: 15px;
+	}
+	
+	.facture-content{
+		margin-top: 10px;
+	}
+	
+	.user-sold{
+		margin-top: 110px;
+	}
+	
+}
+
+@media only screen and (min-width: 386px) and (max-width: 529px){
+	
+	.infos-generales h1{
+		font-size: 22px;
+	}
+	
+	.infos-generales{
+		width: 100%;
+	}
+	
+	.infos-generales div,.infos-generales a{
+		font-size: 13px;
+	}
+	
+	.facture-infos {
+		position: absolute;
+		left: 20px;
+		margin-top: 60px;
+		width: 100%;
+		font-size: 13px;
+	}
+	
+	.facture-infos b{
+		display: block;
+	}
+	
+	.facture-content{
+		margin-top: 10px;
+	}
+	
+	.user-sold{
+		margin-top: 110px;
+		font-size: 13px;
+	}
+	
+	.table{
+		font-size: 13px;
+	}
+	
+	.total-container{
+		position: relative;
+		left: 0%;
+		margin-left: 0;
+		padding-right: 0;
+		font-size: 18px;
+		text-align: left;
+		margin-top: 30px;
+	}
+}
+
+
+@media only screen and (max-width: 385px){
+	
+	.infos-generales h1{
+		font-size: 20px;
+	}
+	
+	.infos-generales{
+		width: 100%;
+	}
+	
+	.infos-generales div,.infos-generales a{
+		font-size: 12px;
+	}
+	
+	.facture-infos {
+		position: absolute;
+		left: 20px;
+		margin-top: 70px;
+		width: 100%;
+		font-size: 13px;
+	}
+	
+	.facture-infos b{
+		display: block;
+	}
+	
+	.facture-infos p{
+		display: none;
+	}
+	
+	.facture-content{
+		margin-top: 10px;
+	}
+	
+	.user-sold{
+		margin-top: 80px;
+		font-size: 13px;
+	}
+	
+	.table{
+		font-size: 13px;
+	}
+	
+	.total-container{
+		position: relative;
+		left: 0%;
+		margin-left: 0;
+		padding-right: 0;
+		font-size: 18px;
+		text-align: left;
+		margin-top: 30px;
+	}
+}
+

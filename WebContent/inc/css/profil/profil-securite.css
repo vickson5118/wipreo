@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+#profil-infos-securite a {
+	color: #f07b16;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+form p {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#btn-update-email, #btn-update-password {
+	outline: none;
+	border: none;
+	padding: 15px 20px;
+	color: white;
+	background-color: #572317;
+}
+
+#btn-update-email {
+	position: relative;
+	left: 64.5%;
+}
+
+#btn-update-password {
+	position: relative;
+	left: 70.5%;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	#btn-update-email {
+		position: relative;
+		left: 59%;
+	}
+	#btn-update-password {
+		position: relative;
+		left: 66%;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	#btn-update-email {
+		position: relative;
+		left: 50.5%;
+	}
+	#btn-update-password {
+		position: relative;
+		left: 58.5%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	#btn-update-email {
+		position: relative;
+		left: 33%;
+	}
+	#btn-update-password {
+		position: relative;
+		left: 44%;
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	#btn-update-email {
+		position: relative;
+		left: 48.7%;
+	}
+	#btn-update-password {
+		position: relative;
+		left: 57%;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	#btn-update-email,#btn-update-password {
+		position: relative;
+		left: 0%;
+	}
+
+	.col-md-12 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	form p, .profil-picture p {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	#profil-infos-generales a, #profil-infos-securite a,
+		#profil-infos-instructeur a {
+		font-size: 14px;
+	}
+	.profil-picture {
+		text-align: center;
+	}
+	
+	form p{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 359px) {
+	#profil-infos-generales, #profil-infos-securite,
+		#profil-infos-instructeur {
+		margin-right: 10px;
+	}
+	
+	#profil-infos-generales a, #profil-infos-securite a,
+		#profil-infos-instructeur a {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 321px) {
+	#profil-infos-generales, #profil-infos-securite,
+		#profil-infos-instructeur {
+		margin-right: 10px;
+	}
+	#profil-infos-generales a, #profil-infos-securite a,
+		#profil-infos-instructeur a {
+		font-size: 11px;
+	}
+}
+
+@media only screen and (max-width: 289px) {
+	form p, .profil-picture p {
+		font-size: 15px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+}

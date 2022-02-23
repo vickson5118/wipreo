@@ -1,0 +1,328 @@
+/*#domaine1, #domaine2,#domaine3{
+	margin-bottom: 50px;
+}*/
+.domaines>p {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 50px;
+	font-family: 'Nunito Sans', 'Century Gothic', sans-serif;
+}
+
+
+/***************nos domaines*************************/
+.domaine-container {
+	/*border:1px solid red;*/
+	padding: 10px;
+}
+
+.one-domaine {
+	margin-bottom: 40px;
+	height: 250px;
+}
+
+.one-domaine .card {
+	height: 250px;
+	position: relative;
+	border-radius: 8px;
+}
+
+.one-domaine img {
+	height: 250px;
+	border-radius: 8px;
+	padding: 0;
+	margin: 0;
+}
+
+.one-domaine h2 {
+	position: absolute;
+}
+
+.one-domaine h2>a {
+	text-decoration: none;
+	color: white;
+	font-size: 23px;
+	display: block;
+	font-family: 'Nunito Sans', 'Century Gothic', sans-serif;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 300px;
+	height: 250px;
+	border-radius: 8px;
+	position: relative;
+	padding-top: 60%;
+}
+
+.one-domaine h2 a span {
+	font-weight: bold;
+	transition: all 0.4s ease;
+}
+
+.one-domaine h2 a:hover span {
+	color: #f15a24;
+}
+
+/*le liste de domaine lorsque nous sommes sur -767px*/
+.domaine-container-res{
+	padding: 10px;
+	display: none;
+}
+
+.one-domaine-res{
+	display: inline-block;
+	margin-right: 10px;
+	border: 1px solid #f15a24;
+	border-radius: 15px;
+}
+
+.one-domaine-res h2>a {
+	text-decoration: none;
+	color:black;
+	font-size: 16px;
+	font-weight: 400px;
+	display: block;
+	font-family: 'Nunito Sans', 'Century Gothic', sans-serif;
+	text-align: center;
+	position: relative;
+	padding: 10px 15px 5px 15px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	.one-domaine, .one-domaine .card, .one-domaine img, .one-domaine h2>a {
+		height: 250px;
+		width: 250px;
+	}
+	.one-domaine {
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.one-domaine, .one-domaine .card, .one-domaine img, .one-domaine h2>a {
+		height: 250px;
+		width: 250px;
+	}
+	
+	.one-domaine {
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 799px) {
+	.domaines>p {
+		font-size: 30px;
+		margin-top: -5px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.one-domaine, .one-domaine .card, .one-domaine img, .one-domaine h2>a {
+		height: 200px;
+		width: 200px;
+	}
+	.one-domaine {
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.one-domaine h2>a {
+		font-size: 18px;
+	}
+	#index .pub .container>p {
+		font-size: 30px !important;
+	}
+	#index .pub1 img {
+		width: 90px;
+		height: 90px;
+	}
+	#index .pub1 .pub-title {
+		font-size: 12px !important;
+	}
+	#index .pub-description {
+		font-size: 12px;
+	}
+	#index .pub1 a {
+		font-size: 11px;
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.domaine-container{
+		display: none;
+	}
+	
+	.domaine-container-res{
+		display: block;
+	}
+}
+
+
+@media only screen and (max-width: 420px) {
+	.domaines>p {
+		font-size: 25px !important;
+	}
+}
+
+
+
+/*================================ pub =================================***/
+#index .pub {
+	background-color: #F9F9F9;
+	margin-bottom: 30px;
+	padding: 30px;
+}
+
+#index .pub .container>p {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-family: 'Nunito Sans', 'Century Gothic', sans-serif;
+}
+
+#index .pub1 {
+	/*border: 1px solid black;*/
+	padding: 30px;
+	text-align: center;
+}
+
+#index .pub1 .pub-title {
+	font-family: 'Century Gothic', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+#index .pub-description {
+	font-family: 'Century Gothic', sans-serif;
+	font-weight: normal;
+}
+
+#index .pub1 a {
+	text-decoration: none;
+	color: black;
+	transition: color 0.2s;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-o-transition: color 0.2s;
+}
+
+#index .pub1 a:hover {
+	color: #F07B16;
+}
+
+@media only screen and (max-width: 767px) {
+	#index .pub .container>p {
+		font-size: 25px;
+	}
+	#index .pub1 .pub-title {
+		font-size: 22px;
+	}
+	#index .pub-description {
+		font-size: 18px;
+	}
+	#index .pub1 a {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 545px) {
+	#index .pub .container>p {
+		font-size: 16px;
+	}
+	#index .pub1 img {
+		width: 62px;
+		height: 62px;
+		margin-top: -20px;
+	}
+	#index .pub1 .pub-title {
+		font-size: 15px;
+		margin-top: -10px;
+	}
+	#index .pub-description {
+		font-size: 12px;
+		margin-top: -20px;
+	}
+	#index .pub1 a {
+		font-size: 11px;
+		margin-top: -15px;
+	}
+}
+
+/*================================TEMOIGNAGE====================================*/
+#index .temoignages {
+	/*border: 1px solid black;*/
+	margin-bottom: 20px;
+	position: relative;
+}
+
+#index .temoignages>p {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-family: 'Nunito Sans', 'Century Gothic', sans-serif;
+}
+
+#index .temoignage-texte {
+	background-color: #F9F9F9;
+	padding: 15px;
+	border-radius: 10px;
+	font-family: 'Century Gothic', sans-serif;
+	text-align: justify;
+	font-size: 14px;
+}
+
+#index .temoignage {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+#index .temoignage-infos {
+	position: relative;
+	left: 0px;
+	text-align: right;
+	padding-right: 15px;
+}
+
+#index .temoignage-nom {
+	display: inline-block;
+	font-weight: bold;
+	
+}
+
+#index .temoignage-fonction {
+	font-size: 12px;
+}
+
+#index .temoignage-next {
+	background-image: url("/inc/images/icones/temoignage-next.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	right: 15px;
+	top: 39%;
+	cursor: pointer;
+}
+
+#index .temoignage-prev {
+	background-image: url("/inc/images/icones/temoignage-next.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: rotate(180deg);
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	top: 39%;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+	#index .temoignages {
+		display: none;
+	}
+	#index .pub {
+		margin-bottom: 0;
+	}
+}

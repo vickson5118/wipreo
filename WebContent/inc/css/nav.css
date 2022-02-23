@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+#menu-responsive,.res-user-connect-container {
+	display: none;
+}
+
+
+@media only screen and (min-width: 1024px) {
+	
+		/*Pour le menu responsive*/
+	.checkbtn,.res-nav-basket,.res-login-btn {
+		display: none;
+	}
+	
+	.menu-container {
+		position: relative;
+		width: 44%;
+		left: 20%;
+		height: 80px;
+		/*background-color: red;*/
+	}
+	.logo-container {
+		position: absolute;
+		left: 10%;
+		top: 12px;
+	}
+	header {
+		background-color: #fff;
+		height: 80px;
+		position: relative;
+	}
+
+	/**la partie contenant le menu de connexion etc*/
+	.other-infos-header {
+		position: absolute;
+		display: flex;
+		top: 27px;
+		left: 65%;
+		/*background-color: green;*/
+	}
+
+	/*espace client*/
+	.espace-client-header span {
+		padding: 5px 10px;
+		cursor: pointer;
+		border: 1px solid black;
+		/*border-radius: 10px;*/
+		display: inline-block;
+		font-size: 15px;
+		width: auto;
+		max-width: 160px;
+		text-align: center;
+	}
+
+	/*icone de l'espace client*/
+	.espace-client-header span i {
+		font-size: 20px;
+	}
+
+	/*le menu*/
+	nav {
+		position: absolute;
+		top: 30px;
+		margin-left: -20px;
+	}
+
+	/*les liens du menu*/
+	.nav-link {
+		color: black;
+	}
+	/*Le sous menu de domaines de formations*/
+	.smenu {
+		background-color: #f15a25;
+		color: white;
+		position: absolute;
+		margin-top: 1px;
+		right: 0%;
+		width: 700px;
+		padding: 15px 0 10px 10px;
+		column-count: 3;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-mos-column-count: 3;
+		display: none;
+	}
+	.smenu li {
+		list-style: none;
+		text-align: left;
+		padding-bottom: 5px;
+		/*padding: 5px;*/
+	}
+	.smenu li a:hover {
+		color: black;
+	}
+	.smenu li a {
+		text-decoration: none;
+		color: white;
+	}
+
+	/*Au passage sur les elements du menu*/
+	.nav-item:hover {
+		background-color: #f15a24;
+	}
+	.nav-item:hover a {
+		color: white;
+	}
+
+	/*Affichage du sous menu au passage sur domaines de formations*/
+	.nav-domaines:hover>.smenu {
+		display: block;
+	}
+
+	/*div au survol de la partie espace client*/
+	#container-connexion, .user-connect-container {
+		position: absolute;
+		margin-top: 1px;
+		background-color: black;
+		z-index: 99;
+		visibility: hidden;
+		/*border-top: 1px solid white;*/
+		box-shadow: -1px 5px 15px black;
+		color: white;
+	}
+
+	/*le span ou il est ecris "identifiez-vous*/
+	p#identifiez-vous {
+		font-weight: bold;
+		padding: 15px;
+	}
+
+	/*btn se connecter*/
+	#container-connexion #user-connect {
+		background-color: #f15a24; 
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 20px 15px;
+		width: 250px;
+		height: 54px;
+	}
+
+	/*les champs de saisie de l'email et du mot de passe*/
+	#container-connexion input {
+		width: 250px;
+		padding: 10px 15px;
+		display: inline-block;
+		border: 1px solid #ccc;
+		color: grey;
+		/*border-radius: 4px;*/
+	}
+	
+/*Button de connexion des reseaux sociaux*/
+#btn-facebook-nav{
+	outline: navy;
+	background-color: #fff;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 12px 15px 12px 35px;
+	background-repeat: no-repeat;
+	background-position: 25px 14px;
+	-webkit-background-size: 22px;
+	background-size: 22px;
+	margin: 20px 15px;
+	width: 250px;
+}
+
+#btn-facebook-nav{
+	border: 1px solid #0c74b5;
+	color: #0c74b5;
+	background-image: url("/inc/images/icones/compte/facebook.png");
+}
+
+#btn-facebook-nav:hover{
+	background-color: rgba(25, 118, 210,0.5);
+	color: white;
+}
+
+	/*le champ de saisie de l'email*/
+	#container-connexion form input:nth-child(2) {
+		margin: 0 15px 20px 15px;
+	}
+
+	/*Le champ de siaise du mot de passe*/
+	#container-connexion form input:nth-child(3) {
+		margin: 0 15px;
+	}
+
+	/*le lien de mot de passe oublié et de creation de compte*/
+	#forget-pass, #create-compte {
+		border-top: 1px solid white;
+	}
+	/*au survol sur la partie mot de passe oublie et creer un compte*/
+	#forget-pass:hover, #create-compte:hover {
+		background-color: #f15a24;
+	}
+	#forget-pass, #create-compte {
+		text-decoration: none;
+		color: white;
+		display: block;
+		width: 100%;
+		height: 50px;
+		padding: 10px 15px;
+	}
+
+	/*****utilisateur connecter**/
+	.user-connect-container a {
+		display: block;
+		text-decoration: none;
+		color: white;
+		height: 100%;
+		min-width: 200px;
+		padding: 20px 10px;
+		font-size: 16px;
+		border-bottom: 1px solid white;
+	}
+	.user-connect-container a:last-child {
+		border-bottom: none;
+	}
+	.user-connect-container a:hover {
+		background-color: #f15a24;
+	}
+
+	/*panier*/
+	.nav-basket {
+		position: absolute;
+		bottom: 18px;
+		right: 3%;
+		height: 30px;
+		width: 30px;
+	}
+	
+	.nav-basket a i {
+		display: block;
+		font-size: 23px;
+		position: absolute;
+		left: 0px;
+		top: 0;
+	}
+	
+	/*.nav-basket:hover {
+		background-color: #fff;
+	}*/
+	
+	.nav-basket:hover a {
+		color: #f07b16;
+	}
+	.gbadge {
+		font-size: 12px;
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+		position: absolute;
+		top: -9px;
+		right: -9px;
+		color: white;
+		text-align: center;
+		vertical-align: center;
+		background-color: red;
+		display: inline-block;
+		vertical-align: middle;
+		padding-top: 3px;
+	}
+}
+
+@media only screen and (min-width: 1550px) and (max-width: 1590px) {
+	.menu-container {
+		width: 45.5%;
+	}
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1550px) {
+	.menu-container {
+		width: 47%;
+		left: 18%;
+	}
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1499px) {
+	.menu-container {
+		width: 50%;
+		left: 15%;
+	}
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+	.menu-container {
+		width: 54%;
+		left: 12%;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+	.menu-container {
+		width: 59%;
+		left: 10%;
+	}
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1199px) {
+	.logo-container {
+		left: 2%;
+	}
+	.menu-container {
+		width: 65%;
+		left: 7.5%;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+	.logo-container {
+		left: 2%;
+	}
+	.menu-container {
+		width: 69%;
+		left: 5%;
+	}
+}
